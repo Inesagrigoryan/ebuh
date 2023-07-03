@@ -1,0 +1,83 @@
+.car-container .row .add.car {
+    margin: 15px;
+    padding: 10px;
+}
+.add.car .show-all {
+    background-color: rgb(59, 59, 203);
+    color: #fff;
+    &:hover {
+        background-color: rgb(23, 23, 129);
+    }
+}
+.cars-container {
+    border: 2px solid rgb(104, 102, 102);
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    
+}
+.table th,
+.table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: center;
+}
+.btn-delete {
+    text-decoration: none;
+    color: red;
+    background-color: #fff;
+    border-radius: 5px;
+    border:2px solid red;
+    padding: 3px;
+    margin: 3px;
+    display: block;
+    &:hover {
+        color:#fff;
+        background-color: red;
+        border:2px solid #fff;
+    }
+}
+.btn-update {
+    text-decoration: none;
+    color: green;
+    background-color: #fff;
+    border-radius: 5px;
+    border:2px solid green;
+    padding: 3px;
+    margin: 3px;
+    display: block;
+    &:hover {
+        color:#fff;
+        background-color: green;
+        border:2px solid #fff;
+    }
+}
+.btn-update.sec {
+    width: 100%;
+    color:#fff;
+    background-color: green;
+    &:hover {
+        background-color: rgb(7, 82, 7);
+    }
+}
+.add-new {
+    width: 50%;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 22px;
+    color:#fff;
+    background-color: #35689c;
+
+    &:hover {
+        color:#fff;
+        background-color: #13395f;
+    }
+}
