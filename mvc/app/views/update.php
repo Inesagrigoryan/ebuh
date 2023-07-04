@@ -1,26 +1,13 @@
 <?php
-    use mvc\app\controllers\UpdateCar;
-    use mvc\app\controllers\GetCars;
+    use mvc\app\controllers\CrudController;
 
-    require_once('../controllers/UpdateCar.php');
-    require_once('../controllers/GetCars.php');
+    require_once('../controllers/CrudController.php');
 
-    if (isset($_POST['updateBtn'])) {
-        $id = $_GET['id'];
-        $brand = $_POST['brand'];
-        $model = $_POST['model'];
-        $year = $_POST['year'];
-        $price = $_POST['price'];
+    $data = new CrudController;
 
-        $uCar = new UpdateCar;
-        $uCar->updateData($id, $brand, $model, $year, $price);
-    }
-
-    $cars = new GetCars();  
-    $cars->getAllData();
-
-    if (isset($_POST['show_data'])) {
-        header("Location: ../views/showAll.php");
+    if (isset($_POST['updateBtn'])) 
+    { 
+        $data->updateData();
     }
 ?>
 

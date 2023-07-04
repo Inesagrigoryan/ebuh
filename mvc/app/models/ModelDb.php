@@ -2,11 +2,8 @@
     namespace mvc\app\models;
 
     use mysqli;
-    use mvc\app\models\ModelDbInterface;
 
-    require_once('../models/ModelDbInterface.php');
-
-    class  ModelDb implements ModelDbInterface
+    class  ModelDb 
     {
         private $dbHost = "localhost";
         private $dbUser = "root";
